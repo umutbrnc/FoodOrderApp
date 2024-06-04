@@ -12,7 +12,7 @@ import Kingfisher
 class Home: UIViewController {
 
     
-    let keyboardGesture = UISwipeGestureRecognizer(target: Home.self, action: #selector(hideKeyboard))
+  //  let keyboardGesture = UISwipeGestureRecognizer(target: Home.self, action: #selector(hideKeyboard))
 
     
     @IBOutlet weak var searchBar: UISearchBar!
@@ -41,8 +41,8 @@ class Home: UIViewController {
             print("Error receiving food list: \(error)")
         }).disposed(by: disposeBag)
 
-        keyboardGesture.isEnabled = false
-        view.addGestureRecognizer(keyboardGesture)
+     //   keyboardGesture.isEnabled = false
+       // view.addGestureRecognizer(keyboardGesture)
    
     }
    
@@ -60,10 +60,7 @@ class Home: UIViewController {
             }
         }
     }
-    
-    @objc func hideKeyboard(){
-        view.endEditing(true)
-    }
+
 
 
 }
@@ -79,6 +76,9 @@ extension Home : UISearchBarDelegate {
         }
     }
     
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+            searchBar.resignFirstResponder()
+       }
     
 }
 
