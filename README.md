@@ -1,2 +1,2 @@
 # FoodOrderApp
-Food Order Application (iOS) 
+Food Order Mobile Application (iOS) 
