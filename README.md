@@ -8,7 +8,7 @@ Technologies used:
 Firebase Authentication ; was used for registration.
 Alamofire ; was used to fetch data from apidean.
 RxSwift ; was used to monitor changes in data.
-Kingfisher ; was used to retrieve food images from the API and display them on the screen.
+Kingfisher ; was used to retrieve food images from the API and display them on the screen. Also the project was designed in accordance with the Model-View-ViewModel Architecture.
 
 <img width="200" alt="Entry" src="https://github.com/umutbrnc/FoodOrderApp/assets/117451508/3c40c4be-cd4a-443c-b780-27b23b707274">
 <img width="200" alt="SignUp" src="https://github.com/umutbrnc/FoodOrderApp/assets/117451508/f842d723-65b4-4dfa-b40d-477edf7ffa57">
